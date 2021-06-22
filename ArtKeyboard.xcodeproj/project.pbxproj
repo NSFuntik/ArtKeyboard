@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,38 @@
 		4054D87E2680C25A00C11DCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D87D2680C25A00C11DCC /* ContentView.swift */; };
 		4054D8802680C25C00C11DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4054D87F2680C25C00C11DCC /* Assets.xcassets */; };
 		4054D8832680C25C00C11DCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4054D8822680C25C00C11DCC /* Preview Assets.xcassets */; };
+		4054D8952680C29400C11DCC /* KeyboardArt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4054D88E2680C29400C11DCC /* KeyboardArt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4054D8A92680E09D00C11DCC /* GiphyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D8A82680E09D00C11DCC /* GiphyPicker.swift */; };
+		4054D8AC2680F1F600C11DCC /* GiphyUISDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4054D8AB2680F1F600C11DCC /* GiphyUISDK */; };
+		4054D8B126820CE100C11DCC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D8AD26820CE100C11DCC /* Constants.swift */; };
+		4054D8B226820CE100C11DCC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D8AE26820CE100C11DCC /* Extensions.swift */; };
+		4054D8B326820CE100C11DCC /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4054D8AF26820CE100C11DCC /* Keyboard.xib */; };
+		4054D8B426820CE100C11DCC /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D8B026820CE100C11DCC /* KeyboardViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4054D8932680C29400C11DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4054D8702680C25A00C11DCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4054D88D2680C29400C11DCC;
+			remoteInfo = KeyboardArt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4054D8992680C29500C11DCC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4054D8952680C29400C11DCC /* KeyboardArt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4054D8782680C25A00C11DCC /* ArtKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +51,25 @@
 		4054D87F2680C25C00C11DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4054D8822680C25C00C11DCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4054D8842680C25C00C11DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4054D88E2680C29400C11DCC /* KeyboardArt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KeyboardArt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4054D8922680C29400C11DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4054D8A82680E09D00C11DCC /* GiphyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyPicker.swift; sourceTree = "<group>"; };
+		4054D8AD26820CE100C11DCC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4054D8AE26820CE100C11DCC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4054D8AF26820CE100C11DCC /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
+		4054D8B026820CE100C11DCC /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4054D8752680C25A00C11DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4054D8AC2680F1F600C11DCC /* GiphyUISDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4054D88B2680C29400C11DCC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,7 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				4054D87A2680C25A00C11DCC /* ArtKeyboard */,
+				4054D88F2680C29400C11DCC /* KeyboardArt */,
 				4054D8792680C25A00C11DCC /* Products */,
+				4054D89F2680C87C00C11DCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				4054D8782680C25A00C11DCC /* ArtKeyboard.app */,
+				4054D88E2680C29400C11DCC /* KeyboardArt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +103,7 @@
 			children = (
 				4054D87B2680C25A00C11DCC /* ArtKeyboardApp.swift */,
 				4054D87D2680C25A00C11DCC /* ContentView.swift */,
+				4054D8A82680E09D00C11DCC /* GiphyPicker.swift */,
 				4054D87F2680C25C00C11DCC /* Assets.xcassets */,
 				4054D8842680C25C00C11DCC /* Info.plist */,
 				4054D8812680C25C00C11DCC /* Preview Content */,
@@ -69,6 +119,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4054D88F2680C29400C11DCC /* KeyboardArt */ = {
+			isa = PBXGroup;
+			children = (
+				4054D8AD26820CE100C11DCC /* Constants.swift */,
+				4054D8AE26820CE100C11DCC /* Extensions.swift */,
+				4054D8AF26820CE100C11DCC /* Keyboard.xib */,
+				4054D8B026820CE100C11DCC /* KeyboardViewController.swift */,
+				4054D8922680C29400C11DCC /* Info.plist */,
+			);
+			path = KeyboardArt;
+			sourceTree = "<group>";
+		};
+		4054D89F2680C87C00C11DCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +148,39 @@
 				4054D8742680C25A00C11DCC /* Sources */,
 				4054D8752680C25A00C11DCC /* Frameworks */,
 				4054D8762680C25A00C11DCC /* Resources */,
+				4054D8992680C29500C11DCC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4054D8942680C29400C11DCC /* PBXTargetDependency */,
+			);
+			name = ArtKeyboard;
+			packageProductDependencies = (
+				4054D8AB2680F1F600C11DCC /* GiphyUISDK */,
+			);
+			productName = ArtKeyboard;
+			productReference = 4054D8782680C25A00C11DCC /* ArtKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4054D88D2680C29400C11DCC /* KeyboardArt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4054D8962680C29500C11DCC /* Build configuration list for PBXNativeTarget "KeyboardArt" */;
+			buildPhases = (
+				4054D88A2680C29400C11DCC /* Sources */,
+				4054D88B2680C29400C11DCC /* Frameworks */,
+				4054D88C2680C29400C11DCC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ArtKeyboard;
-			productName = ArtKeyboard;
-			productReference = 4054D8782680C25A00C11DCC /* ArtKeyboard.app */;
-			productType = "com.apple.product-type.application";
+			name = KeyboardArt;
+			packageProductDependencies = (
+			);
+			productName = KeyboardArt;
+			productReference = 4054D88E2680C29400C11DCC /* KeyboardArt.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +194,10 @@
 					4054D8772680C25A00C11DCC = {
 						CreatedOnToolsVersion = 12.5;
 					};
+					4054D88D2680C29400C11DCC = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
 				};
 			};
 			buildConfigurationList = 4054D8732680C25A00C11DCC /* Build configuration list for PBXProject "ArtKeyboard" */;
@@ -112,11 +209,15 @@
 				Base,
 			);
 			mainGroup = 4054D86F2680C25A00C11DCC;
+			packageReferences = (
+				4054D8AA2680F1F600C11DCC /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */,
+			);
 			productRefGroup = 4054D8792680C25A00C11DCC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4054D8772680C25A00C11DCC /* ArtKeyboard */,
+				4054D88D2680C29400C11DCC /* KeyboardArt */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +232,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4054D88C2680C29400C11DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4054D8B326820CE100C11DCC /* Keyboard.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,12 +247,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4054D8A92680E09D00C11DCC /* GiphyPicker.swift in Sources */,
 				4054D87E2680C25A00C11DCC /* ContentView.swift in Sources */,
 				4054D87C2680C25A00C11DCC /* ArtKeyboardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4054D88A2680C29400C11DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4054D8B126820CE100C11DCC /* Constants.swift in Sources */,
+				4054D8B426820CE100C11DCC /* KeyboardViewController.swift in Sources */,
+				4054D8B226820CE100C11DCC /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4054D8942680C29400C11DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4054D88D2680C29400C11DCC /* KeyboardArt */;
+			targetProxy = 4054D8932680C29400C11DCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4054D8852680C25C00C11DCC /* Debug */ = {
@@ -265,6 +393,7 @@
 		4054D8882680C25C00C11DCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +416,7 @@
 		4054D8892680C25C00C11DCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +431,47 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.gunter.ArtKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4054D8972680C29500C11DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5FPJ5BKV4;
+				INFOPLIST_FILE = KeyboardArt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.gunter.ArtKeyboard.KeyboardArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4054D8982680C29500C11DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5FPJ5BKV4;
+				INFOPLIST_FILE = KeyboardArt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.gunter.ArtKeyboard.KeyboardArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -327,7 +498,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4054D8962680C29500C11DCC /* Build configuration list for PBXNativeTarget "KeyboardArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4054D8972680C29500C11DCC /* Debug */,
+				4054D8982680C29500C11DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4054D8AA2680F1F600C11DCC /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Giphy/giphy-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4054D8AB2680F1F600C11DCC /* GiphyUISDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4054D8AA2680F1F600C11DCC /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */;
+			productName = GiphyUISDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4054D8702680C25A00C11DCC /* Project object */;
 }

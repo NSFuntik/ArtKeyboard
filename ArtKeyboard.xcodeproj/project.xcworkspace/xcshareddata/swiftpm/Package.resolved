@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "GiphyUISDK",
+        "repositoryURL": "https://github.com/Giphy/giphy-ios-sdk",
+        "state": {
+          "branch": null,
+          "revision": "867078e1f74934ee387bee80ade9dfd0b90d4a47",
+          "version": "2.1.9"
+        }
+      },
+      {
+        "package": "libwebp",
+        "repositoryURL": "https://github.com/SDWebImage/libwebp-Xcode",
+        "state": {
+          "branch": null,
+          "revision": "289862b9466243cdec407997d4cb8ba529359a99",
+          "version": "1.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
