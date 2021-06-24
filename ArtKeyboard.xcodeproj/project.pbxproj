@@ -35,6 +35,27 @@
 			remoteGlobalIDString = 4054D88D2680C29400C11DCC;
 			remoteInfo = KeyboardArt;
 		};
+		4054D8D72685041D00C11DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4054D8D12685041D00C11DCC /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01721F5237084AFDFF8404558D038271;
+			remoteInfo = "Pods-ArtKeyboard";
+		};
+		4054D8D92685041D00C11DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4054D8D12685041D00C11DCC /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D917391E60D236C60D740162AFA1EEC9;
+			remoteInfo = "Pods-KeyboardArt";
+		};
+		4054D8DB2685041D00C11DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4054D8D12685041D00C11DCC /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E7E98885A0FEF49E9EE8975449969BEB;
+			remoteInfo = Swifter;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,6 +93,7 @@
 		4054D8BE2682275F00C11DCC /* ThemeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeDetailView.swift; sourceTree = "<group>"; };
 		4054D8C02682394C00C11DCC /* instagram.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = instagram.html; sourceTree = "<group>"; };
 		4054D8C226823EB300C11DCC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		4054D8D12685041D00C11DCC /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = ../../Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		65DB3BD29EB0C1FF272BADEB /* Pods_ArtKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C088F440B3725B53F44DB052 /* Pods-ArtKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtKeyboard.release.xcconfig"; path = "Target Support Files/Pods-ArtKeyboard/Pods-ArtKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 		E7CD5BFD3E2B3DAA6AC58476 /* Pods-ArtKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-ArtKeyboard/Pods-ArtKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +173,7 @@
 		4054D8812680C25C00C11DCC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				4054D8D12685041D00C11DCC /* Pods.xcodeproj */,
 				4054D8822680C25C00C11DCC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -176,6 +199,16 @@
 				EBCDE01018B6A2BC4EE28B11 /* Pods_KeyboardArt.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4054D8D22685041D00C11DCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4054D8D82685041D00C11DCC /* Pods_ArtKeyboard.framework */,
+				4054D8DA2685041D00C11DCC /* Pods_KeyboardArt.framework */,
+				4054D8DC2685041D00C11DCC /* Swifter.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +282,12 @@
 			mainGroup = 4054D86F2680C25A00C11DCC;
 			productRefGroup = 4054D8792680C25A00C11DCC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4054D8D22685041D00C11DCC /* Products */;
+					ProjectRef = 4054D8D12685041D00C11DCC /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4054D8772680C25A00C11DCC /* ArtKeyboard */,
@@ -256,6 +295,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4054D8D82685041D00C11DCC /* Pods_ArtKeyboard.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_ArtKeyboard.framework;
+			remoteRef = 4054D8D72685041D00C11DCC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4054D8DA2685041D00C11DCC /* Pods_KeyboardArt.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_KeyboardArt.framework;
+			remoteRef = 4054D8D92685041D00C11DCC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4054D8DC2685041D00C11DCC /* Swifter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swifter.framework;
+			remoteRef = 4054D8DB2685041D00C11DCC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4054D8762680C25A00C11DCC /* Resources */ = {

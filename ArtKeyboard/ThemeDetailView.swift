@@ -153,11 +153,13 @@ struct ThemeIconView: View {
                         <meta name="apple-mobile-web-app-capable" content="yes">
                         <meta name="apple-mobile-web-app-status-bar-style" content="default">
                         <meta content="text/html charset=UTF-8" http-equiv="Content-Type" />
-                        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
-                            <link rel="apple-touch-icon-precomposed" href="data:image/jpeg;base64,\(((UIImage(named: "Theme\(currentTheme)\(currentIcon.description)Icon")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)"/>
+                        <meta name="apple-mobile-web-app-title" content="\(currentIcon.description.capitalized)">
 
-                        <link rel="apple-touch-icon" href="data:image/png;base64,\(((UIImage(named: "Theme\(currentTheme)\(currentIcon.description)Icon")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)=">
-                        <link rel="apple-touch-startup-image" href="data:image/png;base64,\(((UIImage(named: "Theme\(currentTheme)\(currentIcon.description)Icon")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)">
+                        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+                        <link rel="apple-touch-icon-precomposed" href="data:image/jpeg;base64,\(((UIImage(named: "Theme\(currentTheme)\(currentIcon.description)Icon")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)"/>
+
+                        <link rel="apple-touch-icon" href="data:image/png;base64,\(((UIImage(named: "Theme\(currentTheme)\(currentIcon.description)Icon")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)"/>
+                        <link rel="apple-touch-startup-image" href="data:image/png;base64,\(((UIImage(named: "Theme\(currentTheme)\(currentIcon.description)Icon")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)"/>
                             
                         <title>Instagram</title>
                     
@@ -244,17 +246,17 @@ struct ThemeIconView: View {
                     </head>
                     <body>
                         <div id="main-container" class="hidden">
-                                <header>
-                                        <div class="icon" style="background-image: url('data:image/png;base64,\(((UIImage(named: "Theme\(currentTheme)\(currentIcon.description)Icon")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)=');"></div>
-                                        <p>\(currentIcon.description.capitalized)</p>
-                                </header>
-                                
-                                <article>
-                                        <h1>To Add Icon to Home Screen</h1>
-                                        <p>Tap <span id="share"></span> at the bottom of the screen</p>
-                                        <p>Select "Add to Home Screen" from the drop-down menu</p>
-                                        <img src="data:image/jpeg;base64,\(((UIImage(named: "ATHS")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)" alt="Iillustration">
-                                </article>
+                    <header>
+                    <div class="icon" style="background-image: url('data:image/png;base64,\(((UIImage(named: "Theme\(currentTheme)\(currentIcon.description)Icon")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)"/>
+                    </div>
+                    <p>\(currentIcon.description.capitalized)</p>
+                    </header>
+                    <article>
+                    <h1>To Add Icon to Home Screen</h1>
+                    <p>Tap <span id="share"></span> at the bottom of the screen</p>
+                    <p>Select "Add to Home Screen" from the drop-down menu</p>
+                    <img src="data:image/jpeg;base64,\(((UIImage(named: "ATHS")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)"/>
+                    </article>
                         </div>
                     
                         <a class="hidden" id="targetAppLink" href="\(currentIcon.shortcuts)://"></a>
