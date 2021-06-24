@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,12 +13,10 @@
 		4054D8832680C25C00C11DCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4054D8822680C25C00C11DCC /* Preview Assets.xcassets */; };
 		4054D8952680C29400C11DCC /* KeyboardArt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4054D88E2680C29400C11DCC /* KeyboardArt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4054D8A92680E09D00C11DCC /* GiphyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D8A82680E09D00C11DCC /* GiphyPicker.swift */; };
-		4054D8AC2680F1F600C11DCC /* GiphyUISDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4054D8AB2680F1F600C11DCC /* GiphyUISDK */; };
 		4054D8B126820CE100C11DCC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D8AD26820CE100C11DCC /* Constants.swift */; };
 		4054D8B226820CE100C11DCC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D8AE26820CE100C11DCC /* Extensions.swift */; };
 		4054D8B326820CE100C11DCC /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4054D8AF26820CE100C11DCC /* Keyboard.xib */; };
 		4054D8B426820CE100C11DCC /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D8B026820CE100C11DCC /* KeyboardViewController.swift */; };
-		4054D8B726821C6600C11DCC /* Html in Frameworks */ = {isa = PBXBuildFile; productRef = 4054D8B626821C6600C11DCC /* Html */; };
 		4054D8B926821D1200C11DCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D8B826821D1200C11DCC /* ContentView.swift */; };
 		4054D8BB268223D300C11DCC /* FontDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D8BA268223D300C11DCC /* FontDictionary.swift */; };
 		4054D8BD2682270F00C11DCC /* ThemesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4054D8BC2682270F00C11DCC /* ThemesView.swift */; };
@@ -78,8 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4054D8AC2680F1F600C11DCC /* GiphyUISDK in Frameworks */,
-				4054D8B726821C6600C11DCC /* Html in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,8 +173,6 @@
 			);
 			name = ArtKeyboard;
 			packageProductDependencies = (
-				4054D8AB2680F1F600C11DCC /* GiphyUISDK */,
-				4054D8B626821C6600C11DCC /* Html */,
 			);
 			productName = ArtKeyboard;
 			productReference = 4054D8782680C25A00C11DCC /* ArtKeyboard.app */;
@@ -231,8 +225,6 @@
 			);
 			mainGroup = 4054D86F2680C25A00C11DCC;
 			packageReferences = (
-				4054D8AA2680F1F600C11DCC /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */,
-				4054D8B526821C6600C11DCC /* XCRemoteSwiftPackageReference "swift-html" */,
 			);
 			productRefGroup = 4054D8792680C25A00C11DCC /* Products */;
 			projectDirPath = "";
@@ -426,7 +418,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ArtKeyboard/Preview Content\"";
-				DEVELOPMENT_TEAM = Y5FPJ5BKV4;
+				DEVELOPMENT_TEAM = UB936SP78M;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ArtKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -434,7 +426,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.gunter.ArtKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.miha.ArtKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ArtKeyboard/Preview Content\"";
-				DEVELOPMENT_TEAM = Y5FPJ5BKV4;
+				DEVELOPMENT_TEAM = UB936SP78M;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ArtKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -457,7 +449,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.gunter.ArtKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.miha.ArtKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -469,14 +461,14 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y5FPJ5BKV4;
+				DEVELOPMENT_TEAM = UB936SP78M;
 				INFOPLIST_FILE = KeyboardArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.gunter.ArtKeyboard.KeyboardArt;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.miha.ArtKeyboard.KeyboardArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -490,14 +482,14 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y5FPJ5BKV4;
+				DEVELOPMENT_TEAM = UB936SP78M;
 				INFOPLIST_FILE = KeyboardArt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.gunter.ArtKeyboard.KeyboardArt;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.miha.ArtKeyboard.KeyboardArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -536,38 +528,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		4054D8AA2680F1F600C11DCC /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Giphy/giphy-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.1.9;
-			};
-		};
-		4054D8B526821C6600C11DCC /* XCRemoteSwiftPackageReference "swift-html" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-html.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4054D8AB2680F1F600C11DCC /* GiphyUISDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4054D8AA2680F1F600C11DCC /* XCRemoteSwiftPackageReference "giphy-ios-sdk" */;
-			productName = GiphyUISDK;
-		};
-		4054D8B626821C6600C11DCC /* Html */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4054D8B526821C6600C11DCC /* XCRemoteSwiftPackageReference "swift-html" */;
-			productName = Html;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4054D8702680C25A00C11DCC /* Project object */;
 }

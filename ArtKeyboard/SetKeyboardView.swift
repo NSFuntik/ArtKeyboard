@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
-import GiphyUISDK
+//import GiphyUISDK
 
 struct SetKeyboardView: View {
     @State private var isShowingGifPicker = true
-    @State var giphyImage: GiphyYYImage?
+//    @State var giphyImage: GiphyYYImage?
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
             Text("How to enable Art Keyboard").font(.title).bold()

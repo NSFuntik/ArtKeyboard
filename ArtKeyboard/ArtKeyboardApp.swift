@@ -6,13 +6,13 @@
 //
 
 import SwiftUI
-import GiphyUISDK
+//import GiphyUISDK
 @main
 struct ArtKeyboardApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView().onAppear {
-                Giphy.configure(apiKey: "dFLhfzSgbrIQBZuHSwl0XWHVeIMlo1zX")
+//                Giphy.configure(apiKey: "dFLhfzSgbrIQBZuHSwl0XWHVeIMlo1zX")
 
             }
         }
