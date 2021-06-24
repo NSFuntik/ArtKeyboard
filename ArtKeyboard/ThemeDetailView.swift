@@ -145,7 +145,6 @@ struct ThemeIconView: View {
             Spacer()
             
             Button(action: {
-//                showWebView = true
 
                 text = """
                     <!DOCTYPE html>
@@ -225,7 +224,7 @@ struct ThemeIconView: View {
                             #share {
                                 display: inline-block;
                                 width: 17px; height: 19.5px;
-                                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAA2CAYAAACx1wu7AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAKqADAAQAAAABAAAANgAAAABxCt+IAAAEOUlEQVRoBe1ZS4gVVxA99XTGTyS4EByzUPG30ggaEAUN6E5BlICMIi7C7EQjiaK8mWEe6hN1ITohiiIkqGhwYxbqSsGN4MKAn4UwJoqoQRRB/JH5vfLcftO3u1+/f1+dEd+FS9etqlt1uu63q4FG+RwikNGpyOhcl1BTLo15tjp1I/rQw3oX7XrAlX1xZcizk9Y2CI5DEQ7AMWSxGSKaxJc7oB26BTkcIZi4TcHvaEIbMpKrF2zcaD2W0rqD3Q6W7So4R7CbCHagrF4JYXiISqhUYKe1ixoBSMGzUI8XpAe9tmI9+nGei6w5JK+aTAa0Q/fTUybk7TfSZ21bcI90G2t+firWEuwFgh1rdaok6gea1sOckzutnxROcdFsYXu85QFfYZ/8wVm7zfIUK7kjXCTYsJ4VlyLqA9quZtH8FDL6F77Fj97KlgjQPJisdBOsmSJ+WUGwl3Fcm3xGpWftQDP6NQdyqzUsuIIWtGKd+HNxlJUpAjoruwn2kJUB3+MploXaZcnagXbhDR3e8KwKrmEi1mCr9Jb14gv3Yjv7Hh1q/oexuOOLKj1rB2o27iYsRTNm8rkCO+RdJSdWbvpmhZs/pmMSZiEtZleoqoyuSqtQKb8XPihkV93OyqOqdYcUa49orR4c6VeOaFYn438OVY4DXVia8JwnTU8hu2w7rVM49DOL6Jjj9Sm9PC521BYH2qmLCcxs5gvwDhOKGM2z+nGaxKaS8mICwQ/cNX4tJvJ4fejlrauH15p92CN/+nrxoU9rNw+96zS2jLU0SN+C++cY+p1HDOcI+Kp/ikWBpnUV/ZrTxc1lJelLKJZjALuMmcKh747YFtxn+yTrv6x9EZlppPAkxqvEEFyiSnzVi3c4TGM017EusWZyBJrREwHQjLYQygyrILiNyVhU9WZuO1Yg9spDaphavCinXjvOULhhSGEMLzILg6EfxOxIzxQXU7UnTqRjwoY5FJoj9wJjcHYANBeKZt6XuaINVzGHSXAsK2YEQIXvES6juDENV8l/sry37oktAGq5I5NoAHU9Lo2INiLqOgKu7X3RczS8UQd0whC7j2iK2TzgJWs/a/jzOBFU90D3yN88jFtYJ/KL03wBOCnBNc+JuSEj+a/UurJ2pWC4j2gpTwn5DaAJAxjr3ohoLCQJGY2IJgxgrPtnGdHoBj2IcbHX+lQMVWGuJvCvGAhHNJoUyGHOp8IV89OBqcyWhP+cPAyAqpe+Cff5mamUQB6WfHzayzdZNyncD5JhJtztXi7pG6sguMkhOMq3K557sooOiBRzTzkvkq20ttpaFKbJgFkBUCPp1FYv3We1RgBh/qRk5Zfo0JrEqflnOVKK4BYz0N7/qShQAzArGwh2NavJPemwYDb/U1P8lzUf3zFN/tZgiA59IapDOg6vmW8fwHRCjufwC/WTtf0c/j8E9yqZqWHs/QHwrvH84SqV1wAAAABJRU5ErkJggg==');
+                                background-image: url('data:image/png;base64,\(UIImage(systemName: "square.and.arrow.up")?.jpegData(compressionQuality: 1)?.base64EncodedString())');
                                 /*background-color: #fff;*/ background-size: contain; background-repeat: no-repeat; vertical-align: sub;
                             }
                             @media (prefers-color-scheme: light) {
