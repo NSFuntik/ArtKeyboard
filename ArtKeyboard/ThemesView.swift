@@ -13,14 +13,14 @@ struct ThemesView: View {
     var body: some View {
         ScrollView {
             HStack {
-                Button(action: {showDetailThemeView = true; currentTheme = 1}, label: {
+                Button(action: {currentTheme = 1;showDetailThemeView = true }, label: {
                     Image("Theme1").resizable().frame(width: 200, height: 400, alignment: .center).cornerRadius(10)
                 })
-                Button(action: {showDetailThemeView = true; currentTheme = 2}, label: {
+                Button(action: {currentTheme = 2;showDetailThemeView = true}, label: {
                     Image("Theme2").resizable().frame(width: 200, height: 300, alignment: .center).cornerRadius(10)
                 })
                 .sheet(isPresented: $showDetailThemeView, content: {
-                    ThemeDetailView(currentTheme: 2)
+                    ThemeDetailView(currentTheme: currentTheme)
                 })
 
             }

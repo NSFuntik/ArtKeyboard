@@ -8,6 +8,7 @@
 import SwiftUI
 import UIKit
 import WebKit
+import Swifter
 struct ThemeDetailView: View {
     @State var currentTheme: Int
     
@@ -71,6 +72,7 @@ enum Application {
     case music
     case appStore
     case calculator
+    case messages
     
     var description : String {
         switch self {
@@ -95,9 +97,38 @@ enum Application {
         case .music: return "music"
         case .appStore: return "appStore"
         case .calculator: return "calculator"
+        case .messages: return "messages"
 
         }
     }
+    var shortcuts : String {
+        switch self {
+        case .instagram: return "instagram"
+        case .whatsApp: return "whatsapp"
+        case .clock: return "shortcuts://x-callback-url/run-shortcut?x-error=clock-wordclock"
+        case .photos: return "photos-redirect"
+        case .tinder: return "tinder"
+        case .maps: return "map"
+        case .discord: return "discord"
+        case .youTube: return "youtube"
+        case .calendar: return "calshow"
+        case .camera: return "shortcuts://x-callback-url/run-shortcut?x-error=camera"
+        case .notes: return "mobilenotes"
+        case .telegram: return "telegram"
+        case .phone: return "shortcuts://x-callback-url/run-shortcut?x-error=mobilephone"
+        case .twitter: return "twitter"
+        case .findMy: return "fmip1"
+        case .weather: return "shortcuts://x-callback-url/run-shortcut?x-error=weather"
+        case .settings: return "com.apple.preferences"
+        case .safari: return "shortcuts://x-callback-url/run-shortcut?x-error=x-web-search"
+        case .music: return "music"
+        case .appStore: return "itms-apps"
+        case .calculator: return "shortcuts://x-callback-url/run-shortcut?x-error=calc"
+        case .messages: return "sms"
+
+        }
+    }
+    
 }
 
 
@@ -114,7 +145,8 @@ struct ThemeIconView: View {
             Spacer()
             
             Button(action: {
-                showWebView = true
+//                showWebView = true
+
                 text = """
                     <!DOCTYPE html>
                     <html>
@@ -123,6 +155,8 @@ struct ThemeIconView: View {
                         <meta name="apple-mobile-web-app-status-bar-style" content="default">
                         <meta content="text/html charset=UTF-8" http-equiv="Content-Type" />
                         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+                            <link rel="apple-touch-icon-precomposed" href="data:image/jpeg;base64,\(((UIImage(named: "Theme\(currentTheme)\(currentIcon.description)Icon")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)"/>
+
                         <link rel="apple-touch-icon" href="data:image/png;base64,\(((UIImage(named: "Theme\(currentTheme)\(currentIcon.description)Icon")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)=">
                         <link rel="apple-touch-startup-image" href="data:image/png;base64,\(((UIImage(named: "Theme\(currentTheme)\(currentIcon.description)Icon")!).jpegData(compressionQuality: 1)?.base64EncodedString())!)">
                             
@@ -224,7 +258,7 @@ struct ThemeIconView: View {
                                 </article>
                         </div>
                     
-                        <a class="hidden" id="targetAppLink" href="\(currentIcon.description == "appStore" ? "itms-apps" : currentIcon.description)://"></a>
+                        <a class="hidden" id="targetAppLink" href="\(currentIcon.shortcuts)://"></a>
                         <script>
                         
                         if (window.navigator.standalone == true) {
@@ -239,6 +273,14 @@ struct ThemeIconView: View {
                     </html>
                     
                     """
+                guard let base64 = text.data(using: .utf8)?.base64EncodedString() else {return}
+            let path: String = "Theme\(currentTheme)/\(currentIcon.description)"
+            let server = HttpServer()
+            server[path] = { reqest in
+                return.movedPermanently("data:text/html;base64,\(base64)")
+            }
+                try? server.start()
+                UIApplication.shared.open(URL(string: "http://localhost:8080/\(path)")!)
             }, label: {
                 
                 Text("INSTALL").foregroundColor(.white).padding(.horizontal,15).padding(.vertical,3).background(Rectangle().cornerRadius(20, antialiased: true))

@@ -8,7 +8,6 @@
 import Foundation
 
 let FontDic = [
-
 [
     "font_name":"Ｆｏｎｔ １",
     "font":[

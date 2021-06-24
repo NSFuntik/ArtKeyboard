@@ -1,0 +1,6 @@
+framework module Pods_ArtKeyboard {
+  umbrella header "Pods-ArtKeyboard-umbrella.h"
+
+  export *
+  module * { export * }
+}
